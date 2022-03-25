@@ -11,7 +11,7 @@ function Banner() {
             </div>
 <h1 className='discription'>Since the inline CSS is written in a JavaScript object, properties with two names, like background-color, must be written with camel case syntax</h1>
         </div>
-      
+    <div className="fade_bottom"></div>
     </div>
   )
 }
