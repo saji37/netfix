@@ -4,7 +4,7 @@ import './RowPost.css';
 import axios from '../../axios'
 function RowPost() {
   const [movies,setMovies]= useState([])
-  useEffect(()=> {
+ useEffect(()=> {
 axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((Response)=>{
   console.log(Response.data)
   setMovies(Response.data.results)
@@ -13,7 +13,7 @@ axios.get(`discover/tv?api_key=${API_KEY}&with_networks=213`).then((Response)=>{
  // alert('Network Error')
 //})
   }, [])
-  return (
+  return ( 
     <div className="row">
       <h2>Netflix Originals</h2>
     <div className='posters'>
